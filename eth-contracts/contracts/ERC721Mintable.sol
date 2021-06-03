@@ -7,21 +7,41 @@ import 'openzeppelin-solidity/contracts/token/ERC721/IERC721Receiver.sol';
 import "./Oraclize.sol";
 
 contract Ownable {
-    //  TODO's
-    //  1) create a private '_owner' variable of type address with a public getter function
-    //  2) create an internal constructor that sets the _owner var to the creater of the contract 
-    //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
-    //  4) fill out the transferOwnership function
-    //  5) create an event that emits anytime ownerShip is transfered (including in the constructor)
+    using Address for address;
+
+    address private _owner;
+
+    event OwnershipTransferred();
+
+    constructor() internal {
+        _owner = msg.sender;
+        emit OwnershipTransferred();
+    }
+
+        function getOwner() public view returns (address){
+        return _owner;
+    }
+
+    modifier onlyOwner(){
+        require(msg.sender == _owner, "Caller account is not owner");
+        _;
+    }
 
     function transferOwnership(address newOwner) public onlyOwner {
         // TODO add functionality to transfer control of the contract to a newOwner.
         // make sure the new owner is a real address
+        //require(newOwner != address(0),"Invalid new owner")
+        require(!newOwner.isContract(), "Invalid new owner");
+        emit OwnershipTransferred();
+        _owner = newOwner;
 
     }
 }
 
 //  TODO's: Create a Pausable contract that inherits from the Ownable contract
+contract Pausable is Ownable{
+
+}
 //  1) create a private '_paused' variable of type bool
 //  2) create a public setter using the inherited onlyOwner modifier 
 //  3) create an internal constructor that sets the _paused variable to false
@@ -418,6 +438,7 @@ contract ERC721Metadata is ERC721Enumerable, usingOraclize {
     // TODO: Create private vars for token _name, _symbol, and _baseTokenURI (string)
 
     // TODO: create private mapping of tokenId's to token uri's called '_tokenURIs'
+    mapping(uint => string) _tokenURIs;
 
     bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;
     /*
