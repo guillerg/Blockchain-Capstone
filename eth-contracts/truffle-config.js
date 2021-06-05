@@ -15,12 +15,12 @@ module.exports = {
     rinkeby: {
       provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
       network_id: 4, 
-      gas: 4500000,
+      gas: 10000000,
       gasPrice: 10000000000,
-      confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      networkCheckTimeout: 1000000,
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+      //confirmations: 2,    // # of confs to wait between deployments. (default: 0)
+      //timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+      //networkCheckTimeout: 1000000,
+      //skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     }
   },
 
