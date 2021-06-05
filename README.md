@@ -5,18 +5,13 @@ The capstone will build upon the knowledge you have gained in the course in orde
 Owner account 0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
 3 ethers funded from https://faucet.rinkeby.io/
 
+ganache-cli -m "ten stereo stay dragon promote blade jazz sample coyote cradle creek diamond"
 
-S C:\Users\Martina\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle migrate --reset --network rinkeby
+truffle migrate --reset --network rinkeby
 
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-
-
-Migrations dry-run (simulation)       
-===============================       
-> Network name:    'rinkeby-fork'     
+Starting migrations...
+======================
+> Network name:    'rinkeby'
 > Network id:      4
 > Block gas limit: 10000000 (0x989680)
 
@@ -26,55 +21,34 @@ Migrations dry-run (simulation)
 
    Deploying 'Migrations'
    ----------------------
-   > block number:        8710264
-   > block timestamp:     1622889946
-   > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.99789763
-   > gas used:            210237 (0x3353d)
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00210237 ETH
+   > transaction hash:    0x7ce6baa30863e130438d49b42b261613f1ef3d3e72bbf269008e2a452f2e23be
+   ⠹ Blocks: 15           Seconds: 229
+PS C:\Users\Martina\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle deploy --reset --network rinkeby      
 
-   -------------------------------------
-   > Total cost:          0.00210237 ETH
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
 
 
-2_deploy_contracts.js
-=====================
-
-   Deploying 'Verifier'
-   --------------------
-   > block number:        8710266
-   > block timestamp:     1622889953
-   > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.98794781
-   > gas used:            967619 (0xec3c3)
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.00967619 ETH
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 10000000 (0x989680)
 
 
-   Deploying 'SolnSquareVerifier'
-   ------------------------------
-   > block number:        8710267
-   > block timestamp:     1622889979
-   > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.95637415
-   > gas used:            3157366 (0x302d76)
-   > gas price:           10 gwei
-   > value sent:          0 ETH
-   > total cost:          0.03157366 ETH
+1_initial_migration.js
+======================
 
-   -------------------------------------
-   > Total cost:          0.04124985 ETH
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xde324cfe3291b7efc18ec7eb756b2d058deaf29b4623d4666c9b0bbd0059fa2e
+   ⠏ Blocks: 3            Seconds: 40
+PS C:\Users\Martina\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle migrate --reset --network rinkeby     
 
-
-Summary
-=======
-> Total deployments:   3
-> Final cost:          0.04335222 ETH
-
-
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
 
 
 
@@ -90,23 +64,23 @@ Starting migrations...
 
    Deploying 'Migrations'
    ----------------------
-   > transaction hash:    0x371483b02ad97050ac5b0f92e326200c26bf799045efa1b33a5628f4f47aadea
-   > Blocks: 3            Seconds: 40
-   > contract address:    0x16EBb3179539235667D9901DCF0e37f58EBC5634
-   > block number:        8710269
-   > block timestamp:     1622890037
+   > transaction hash:    0x50f2db5023808a398310fc438b1647a55ef458e807d2781378bcd14e9a7c375c
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x41502E12eB60c9424A55a85A44dD3Fa0d2dce3d2
+   > block number:        8712203
+   > block timestamp:     1622919055
    > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.99773463
+   > balance:             2.915685854
    > gas used:            226537 (0x374e9)
-   > gas price:           10 gwei
+   > gas price:           21 gwei
    > value sent:          0 ETH
-   > total cost:          0.00226537 ETH
+   > total cost:          0.004757277 ETH
 
 
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:          0.00226537 ETH
+   > Total cost:         0.004757277 ETH
 
 
 2_deploy_contracts.js
@@ -114,51 +88,53 @@ Starting migrations...
 
    Deploying 'Verifier'
    --------------------
-   > transaction hash:    0xb497d3941864bf239e382f135dd218e0afb0605c80fa8b80a98ad9f0933ff6f1
+   > transaction hash:    0x8c07afebf8f9f07ec01e397b250c4627c5a2b0875b82bdc16efffaec77c09838
    > Blocks: 1            Seconds: 12
-   > contract address:    0x6d41930A9237687FF87B16cD4ccF98f4d50aC0F3
-   > block number:        8710271
-   > block timestamp:     1622890067
+   > contract address:    0x1f7a379Dc80CF00F2d245a69a773254354dD85b2
+   > block number:        8712205
+   > block timestamp:     1622919085
    > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.98760081
+   > balance:             2.894404832
    > gas used:            967619 (0xec3c3)
-   > gas price:           10 gwei
+   > gas price:           21 gwei
    > value sent:          0 ETH
-   > total cost:          0.00967619 ETH
-gi
+   > total cost:          0.020319999 ETH
+
 
    Deploying 'SolnSquareVerifier'
    ------------------------------
-   > transaction hash:    0x629c57e2e238c2cfb9ac3524b0fc8dbb132d3771de5d6069d4f91f7308ac32ce
-   > Blocks: 1            Seconds: 12
-   > contract address:    0x39B105E3c7818b98D1a8e861A620D2028Bf08976
-   > block number:        8710272
-   > block timestamp:     1622890082
+   > transaction hash:    0xd3adc29387a61d9b6d6eb717c8a3ee0082f30f32529c727f20e3279b639a7488
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x698Ee08EeBc2548b919FEB39baa1B184bDBEE5eB
+   > block number:        8712206
+   > block timestamp:     1622919100
    > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.95423215
-   > gas used:            3336866 (0x32eaa2)
-   > gas price:           10 gwei
+   > balance:             2.824328882
+   > gas used:            3336950 (0x32eaf6)
+   > gas price:           21 gwei
    > value sent:          0 ETH
-   > total cost:          0.03336866 ETH
+   > total cost:          0.07007595 ETH
 
 
    > Saving migration to chain.
    > Saving artifacts
    -------------------------------------
-   > Total cost:          0.04304485 ETH
+   > Total cost:         0.090395949 ETH
 
 
 Summary
 =======
 > Total deployments:   3
-> Final cost:          0.04531022 ETH
+> Final cost:          0.095153226 ETH
 
 
-https://rinkeby.etherscan.io/address/0x39B105E3c7818b98D1a8e861A620D2028Bf08976
+# Contract address
+
+https://rinkeby.etherscan.io/address/0x698Ee08EeBc2548b919FEB39baa1B184bDBEE5eB
 
 # Contract ABI
 
-  "abi": [
+[
     {
       "inputs": [
         {
@@ -860,6 +836,27 @@ https://rinkeby.etherscan.io/address/0x39B105E3c7818b98D1a8e861A620D2028Bf08976
   ]
 
 # Project Resources
+
+# Mint tokens using MEW
+
+Configure Metamask with seed from trufle config and make sure contract creator account is selectec (accounts[0])
+
+https://www.myetherwallet.com/interface/interact-with-contract
+
+# Opensea storefront
+
+https://testnets.opensea.io/GSantos
+
+
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/1
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/2
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/3
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/4
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/5
+
+For Sale:
+https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/20
+
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
 * [Visual Studio Code](https://code.visualstudio.com/)
