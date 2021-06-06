@@ -13,91 +13,14 @@ The capstone will build upon the knowledge you have gained in the course in orde
 ![truffle test](Images/Test.PNG)
 
 
-
-
 ## Deploy to Rinkeby
 
 truffle migrate --reset --network rinkeby
 
-Starting migrations...
-======================
-> Network name:    'rinkeby'
-> Network id:      4
-> Block gas limit: 10000000 (0x989680)
 
 
-1_initial_migration.js
-======================
-
-   Deploying 'Migrations'
-   ----------------------
-   > transaction hash:    0x7ce6baa30863e130438d49b42b261613f1ef3d3e72bbf269008e2a452f2e23be
-   ⠹ Blocks: 15           Seconds: 229
-PS C:\Users\...\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle deploy --reset --network rinkeby      
-
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-
-Starting migrations...
-======================
-> Network name:    'rinkeby'
-> Network id:      4
-> Block gas limit: 10000000 (0x989680)
-
-
-1_initial_migration.js
-======================
-
-   Deploying 'Migrations'
-   ----------------------
-   > transaction hash:    0xde324cfe3291b7efc18ec7eb756b2d058deaf29b4623d4666c9b0bbd0059fa2e
-   ⠏ Blocks: 3            Seconds: 40
-PS C:\Users\...\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle migrate --reset --network rinkeby     
-
-Compiling your contracts...
-===========================
-> Everything is up to date, there is nothing to compile.
-
-
-
-Starting migrations...
-======================
-> Network name:    'rinkeby'
-> Network id:      4
-> Block gas limit: 10000000 (0x989680)
-
-
-1_initial_migration.js
-======================
-
-   Deploying 'Migrations'
-   ----------------------
-   > transaction hash:    0x50f2db5023808a398310fc438b1647a55ef458e807d2781378bcd14e9a7c375c
-   > Blocks: 0            Seconds: 4
-   > contract address:    0x41502E12eB60c9424A55a85A44dD3Fa0d2dce3d2
-   > block number:        8712203
-   > block timestamp:     1622919055
-   > account:             0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-   > balance:             2.915685854
-   > gas used:            226537 (0x374e9)
-   > gas price:           21 gwei
-   > value sent:          0 ETH
-   > total cost:          0.004757277 ETH
-
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:         0.004757277 ETH
-
-
-2_deploy_contracts.js
-=====================
-
-   Deploying 'Verifier'
-   --------------------
+#### Deploying 'Verifier'
+```
    > transaction hash:    0x8c07afebf8f9f07ec01e397b250c4627c5a2b0875b82bdc16efffaec77c09838
    > Blocks: 1            Seconds: 12
    > contract address:    0x1f7a379Dc80CF00F2d245a69a773254354dD85b2
@@ -109,10 +32,10 @@ Starting migrations...
    > gas price:           21 gwei
    > value sent:          0 ETH
    > total cost:          0.020319999 ETH
+```
 
-
-   Deploying 'SolnSquareVerifier'
-   ------------------------------
+#### Deploying 'SolnSquareVerifier'
+```
    > transaction hash:    0xd3adc29387a61d9b6d6eb717c8a3ee0082f30f32529c727f20e3279b639a7488
    > Blocks: 0            Seconds: 8
    > contract address:    0x698Ee08EeBc2548b919FEB39baa1B184bDBEE5eB
@@ -124,18 +47,7 @@ Starting migrations...
    > gas price:           21 gwei
    > value sent:          0 ETH
    > total cost:          0.07007595 ETH
-
-
-   > Saving migration to chain.
-   > Saving artifacts
-   -------------------------------------
-   > Total cost:         0.090395949 ETH
-
-
-Summary
-=======
-> Total deployments:   3
-> Final cost:          0.095153226 ETH
+```
 
 
 ## Contract address
@@ -856,6 +768,9 @@ Interact with contrat in MeW using contract address and abi
 
 https://www.myetherwallet.com/interface/interact-with-contract
 
+![mint token](Images/MeW_Mint.PNG)
+
+
 # Opensea storefront
 
 https://testnets.opensea.io/GSantos
@@ -876,6 +791,7 @@ https://rinkeby.etherscan.io/tx/0x99e8e2b2ec4faf618876d53ad4294a184eec3cd61ee356
 ## Buyer
 https://testnets.opensea.io/0x8357db8ec27139d611982fbd09d22b42dbebba51
 
+![Sell token](Images/BuyToken.PNG)
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
 * [Visual Studio Code](https://code.visualstudio.com/)
