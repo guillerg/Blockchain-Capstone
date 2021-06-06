@@ -7,18 +7,13 @@ The capstone will build upon the knowledge you have gained in the course in orde
 * npm install
 * cd .\eth-contracts\  
 * ganache-cli -m "ten stereo stay dragon promote blade jazz sample coyote cradle creek diamond"
-
-Accounts
-=============
-
-* 0x3d62F8bdcac9488fcf1eF363A84835897d8F3584 (owner)
-* 0x8357db8Ec27139D611982Fbd09D22b42dBeBba51 (buyer)
-
-
 * truffle migrate --reset --network development
 * truffle test 
 
-![truffle test](/Images/test.png)
+![truffle test](./Images/test.png)
+
+
+
 
 ## Deploy to Rinkeby
 
