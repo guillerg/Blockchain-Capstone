@@ -10,7 +10,7 @@ The capstone will build upon the knowledge you have gained in the course in orde
 * truffle migrate --reset --network development
 * truffle test 
 
-![truffle test](./Images/test.png)
+![truffle test](Images/Test.PNG)
 
 
 
