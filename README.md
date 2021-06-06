@@ -1,11 +1,31 @@
-# Udacity Blockchain Capstone
+# Udacity Blockchain Capstone Real Estate Marketplace
 
 The capstone will build upon the knowledge you have gained in the course in order to build a decentralized housing product. 
 
-Owner account 0x3d62F8bdcac9488fcf1eF363A84835897d8F3584
-3 ethers funded from https://faucet.rinkeby.io/
+# Setup and test
 
+npm install
+cd .\eth-contracts\  
 ganache-cli -m "ten stereo stay dragon promote blade jazz sample coyote cradle creek diamond"
+
+Accounts
+=============
+
+(0) 0x3d62F8bdcac9488fcf1eF363A84835897d8F3584 (owner)
+(1) 0x8357db8Ec27139D611982Fbd09D22b42dBeBba51 (buyer)
+
+
+Private Keys
+==================
+(0) 0xd18908b95555f0e0f9326ce6e2b265bd746158d7b716eab309aa29b2e7f980c0
+(1) 0xc4ed6de8b15cd7d8e16a1511999ece15456eeb794a4bae6415af84b0ba7b4750
+
+truffle migrate --reset --network development
+truffle test 
+
+![truffle test](images/test.png)
+
+## Deploy to Rinkeby
 
 truffle migrate --reset --network rinkeby
 
@@ -23,7 +43,7 @@ Starting migrations...
    ----------------------
    > transaction hash:    0x7ce6baa30863e130438d49b42b261613f1ef3d3e72bbf269008e2a452f2e23be
    ⠹ Blocks: 15           Seconds: 229
-PS C:\Users\Martina\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle deploy --reset --network rinkeby      
+PS C:\Users\...\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle deploy --reset --network rinkeby      
 
 Compiling your contracts...
 ===========================
@@ -44,7 +64,7 @@ Starting migrations...
    ----------------------
    > transaction hash:    0xde324cfe3291b7efc18ec7eb756b2d058deaf29b4623d4666c9b0bbd0059fa2e
    ⠏ Blocks: 3            Seconds: 40
-PS C:\Users\Martina\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle migrate --reset --network rinkeby     
+PS C:\Users\...\Desktop\Udacity\Realstate\Blockchain-Capstone\eth-contracts> truffle migrate --reset --network rinkeby     
 
 Compiling your contracts...
 ===========================
@@ -128,11 +148,11 @@ Summary
 > Final cost:          0.095153226 ETH
 
 
-# Contract address
+## Contract address
 
 https://rinkeby.etherscan.io/address/0x698Ee08EeBc2548b919FEB39baa1B184bDBEE5eB
 
-# Contract ABI
+## Contract ABI
 
 [
     {
@@ -835,11 +855,14 @@ https://rinkeby.etherscan.io/address/0x698Ee08EeBc2548b919FEB39baa1B184bDBEE5eB
     }
   ]
 
-# Project Resources
 
 # Mint tokens using MEW
 
 Configure Metamask with seed from trufle config and make sure contract creator account is selectec (accounts[0])
+
+Fund the accounts using https://faucet.rinkeby.io/
+
+Interact with contrat in MeW using contract address and abi
 
 https://www.myetherwallet.com/interface/interact-with-contract
 
@@ -854,8 +877,14 @@ https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/3
 https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/4
 https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/5
 
-For Sale:
+## For Sale:
 https://testnets.opensea.io/assets/0x698ee08eebc2548b919feb39baa1b184bdbee5eb/20
+
+## Tx
+https://rinkeby.etherscan.io/tx/0x99e8e2b2ec4faf618876d53ad4294a184eec3cd61ee356ed19abd73a7cfd597e
+
+## Buyer
+https://testnets.opensea.io/0x8357db8ec27139d611982fbd09d22b42dbebba51
 
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
